@@ -14,6 +14,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 
  
 }
@@ -169,4 +170,59 @@ color: #ff234b;
 }
 .box-1:hover,.box-2:hover,.box-3:hover,.box-4:hover{
   transform: translateY(-10px);
+
+}
+@media screen and (max-width: 768px){
+    .content{
+   flex-wrap: wrap;
+   flex-direction: column;
+     }
+     .container .nav .list-item,#ul{
+         display: none;
+     }
+     .box-1{
+        position: relative;
+       left: -30px;
+    
+    }
+    .box-3{
+        position: relative;
+        left: -30px;
+        bottom: -15px;
+    }
+    .box-2{
+        position: relative;
+        top: -40px;
+        left: -20px;
+    }
+    .box-4{
+        position: relative;
+       top: -40px;
+       left: -20px;
+    }
+    .more{
+        position: relative;
+        left: 200px;
+        top: -20px;
+    }
+    .content .left .text img{
+        width: 100%;
+    }
+    .content .left .text h1{
+        font-size: 1.1rem ;
+    }
+    .content .left .text h2{
+        font-size: 1.1rem ;
+    }
+    .content .right img{
+        width: 100%;
+        position: relative;
+        top: -30px;
+        left: -20px;
+      transform: scale(1.2);
+    }
+   .content .right{
+       margin: 30px 0px ;
+   }
+    
 }
